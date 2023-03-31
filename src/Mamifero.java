@@ -4,7 +4,7 @@ public class Mamifero {
     public String tipo;
     public int tamanio;
 
-    private int edadMaximo;
+    public int edadMaximo;
 
     public double peso;
 
@@ -52,5 +52,20 @@ public class Mamifero {
         this.tamanio = _tamanio;
         this.edadMaximo = _edadMaximo;
         this.peso = _peso;
+    }
+
+    public boolean adicional(int edadAdicional){
+        boolean incremento = true;
+        if(tamanio>=3 && validarNombre()){
+            edadMaximo = edadMaximo+edadAdicional;
+        }
+        return incremento;
+    }
+    private boolean validarNombre(){
+        if(name.equals("vaca")){
+            return true;
+        }else {
+            return false;
+        }
     }
 }
