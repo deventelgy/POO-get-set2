@@ -44,4 +44,13 @@ public class Mamifero {
     public void setPeso(double _peso){
         this.peso = _peso;
     }
+
+    public Mamifero(String _name, String _color, String _tipo, int _tamanio, int _edadMaximo, double _peso){
+        this.name = _name;
+        this.color = _color;
+        this.tipo = _tipo;
+        this.tamanio = _tamanio;
+        this.edadMaximo = _edadMaximo;
+        this.peso = _peso;
+    }
 }
