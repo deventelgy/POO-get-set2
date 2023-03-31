@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Peso = "+mamifero.getPeso());
 
         mamifero.setTipo("Terrestre");
-        mamifero2.adicional(2);
+        mamifero2.adicional(2); // adicionando para la variable edadMaximo
 
         System.out.println("\nDatos actualizados son");
         System.out.println("=====================");
